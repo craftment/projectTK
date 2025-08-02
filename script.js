@@ -83,7 +83,7 @@ function correctFatFinger(touchX, touchY, keyboardRect) {
     if (distance <= keyboardData.correctionRadius) {
       // 거리가 가까울수록, 가중치가 높을수록 점수가 높음
       // 가중치를 더 강하게 반영하도록 수정
-      const score = weight * 5000 - distance; // 가중치에 큰 가중을 주고 거리를 뺌
+      const score = weight * 1000 - distance; // 가중치에 큰 가중을 주고 거리를 뺌
       candidates.push({
         element: keyElement,
         char: keyElement.dataset.char,
