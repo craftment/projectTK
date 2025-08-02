@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태광고 구자훈 한글 스마트 키보드</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>태광고 구자훈 한글 스마트 키보드</h1>
+            <p>팻핑거 보정 기능이 있는 키보드</p>
+        </header>
+        
+        <main>
+            <!-- 텍스트 입력 영역 -->
+            <div class="input-area">
+                <textarea id="textInput" placeholder="여기에 입력된 텍스트가 표시됩니다..." readonly></textarea>
+                <div class="input-controls">
+                    <button id="clearBtn">지우기</button>
+                    <button id="spaceBtn">스페이스</button>
+                    <button id="backspaceBtn">⌫</button>
+                </div>
+            </div>
+            
+            <!-- 키보드 영역 -->
+            <div class="keyboard-container">
+                <div id="keyboard" class="keyboard">
+                    <!-- 키보드 키들이 JavaScript로 동적 생성됩니다 -->
+                </div>
+            </div>
+            
+            <!-- 디버그 정보 -->
+            <div class="debug-info">
+                <div id="debugInfo">
+                    <p>터치 위치: <span id="touchPos">-</span></p>
+                    <p>선택된 키: <span id="selectedKey">-</span></p>
+                    <p>보정 적용: <span id="correctionApplied">-</span></p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>가중치 기반 팻핑거 보정 시스템</p>
+        </footer>
+    </div>
+    <script src="keyboard_data.js"></script>
+    <script src="hangul_composer.js"></script>
+    <script src="script.js"></script>
+</body>
