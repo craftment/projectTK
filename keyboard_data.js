@@ -47,7 +47,7 @@ const keyboardData = {
   keySpacing: 2,
   
   // 팻핑거 보정을 위한 설정
-  correctionRadius: 45 // 보정 범위 (픽셀)
+  correctionRadius: 35 // 보정 범위 (픽셀)
 };
 
 // 키보드 위치 계산 함수
